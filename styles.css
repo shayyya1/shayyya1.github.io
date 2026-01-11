@@ -64,6 +64,12 @@ main {
     max-width: 100%;
 }
 
+/* Wider layout for journey section with video */
+#journey .section-content {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
 /* Typography */
 .story-title {
     font-size: 3.5rem;
@@ -125,6 +131,43 @@ main {
     color: #2c3e50;
 }
 
+/* Video Styling */
+:root {
+    --video-width: 55%;
+}
+
+.content-with-video {
+    display: flex;
+    gap: 3rem;
+    align-items: flex-start;
+}
+
+.text-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.text-content .story-text {
+    font-size: 1.1rem;
+    line-height: 1.9;
+}
+
+.video-content {
+    flex: 0 0 var(--video-width);
+    max-width: var(--video-width);
+}
+
+.project-video {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    display: block;
+    position: sticky;
+    top: 50vh;
+    transform: translateY(-50%);
+}
+
 /* Opening Section Special Styling */
 #opening {
     background: linear-gradient(135deg, rgba(102, 126, 234, 0.05) 0%, rgba(118, 75, 162, 0.05) 100%);
@@ -157,6 +200,19 @@ footer {
     .story-section {
         min-height: auto;
         margin: 4rem 0;
+    }
+
+    .content-with-video {
+        flex-direction: column;
+    }
+
+    .video-content {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .project-video {
+        position: static;
     }
 
     .story-title {
