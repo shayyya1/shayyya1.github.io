@@ -24,61 +24,82 @@
         <section id="journey" class="story-section">
             <div class="section-content">
                 <h2 class="section-heading">Passion</h2>
-                <p class="story-text">
-                    I think my first real dive into computational thinking started through playing Minecraft.
-                    I had just learnt about logic gates in school, and in Minecraft there is redstone which functions the same way.
-                    It quickly became a major project of mine to create an addition calculator, completely from first principles, out of logic gates.
-                    I started small with a binary half adder, then scaled up to n-bit addition by chaining half adders together, which was easy enough.
-                    The real challenge came with integrating denary into the interface. In particular, converting the binary outputs to denary was a 
-                    tremendously difficult problem. I spent months theorising and prototyping different solutions, before eventually finding an 
-                    iterative steady-state based solution. I loved the process of continually developing my knowledge of the problem, and expanding my toolbox 
-                    through each failed prototype. To indicate the scale of this project, I've included a short video of my world.
-                </p>
-                <video class="project-video" autoplay loop muted playsinline aria-label="Minecraft calculator demonstration video showing the redstone logic gates and calculator implementation">
-                    <source src="calc_cut.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <p class="story-text">
-                    My next major personal project was a program designed to solve the classic game Snake. 
-                    I wrote this in Processing (a Java-based language), and it was my introduction to OOP.
-                    I reframed the problem as finding a path from the snake's head to its tail, which goes through every cell in the grid.
-                    This is called a Hamiltonian path, and will guarantee success. I combined this idea with A* pathfinding, where the 
-                    program would prioritise paths that led towards food. However, finding Hamiltonian paths is NP-Complete, so there is no
-                    efficient solution. I instead created a recursive update procedure that can eliminate moves which are not on Hamiltonian paths,
-                    but was not guaranteed to eliminate all invalid moves. This resulted in a high success rate, with the bot successfully beating the game 70% of the time.
-                    In the video below you can see the update procedure in action. The black cells are the body of the snake, and the red is the head. 
-                    All the other coloured states around the snake describe how many valid moves are available from that cell.
-                    The key skills I learnt during this project which can be applied to Bending Spoons are independent research and creative thinking. 
-                    I reduced the problem to one found in theory, and researched papers which gave insight and solutions. I then adopted and reapplied these solutions
-                    within the context of my program, a process which is applicable throughout all facets of software engineering.
-                </p>
-                <video class="project-video" autoplay loop muted playsinline aria-label="Snake game video">
-                    <source src="snake_game.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+                <div class="project-item">
+                    <p class="story-text">
+                        I think my first real dive into computational thinking started through playing Minecraft.
+                        I had just learnt about logic gates in school, and in Minecraft there is redstone which functions the same way.
+                        It quickly became a major project of mine to create an addition calculator, completely from first principles, out of logic gates.
+                    </p>
+                    <div class="technical-details" style="display: none;">
+                        <p class="story-text">
+                            I started small with a binary half adder, then scaled up to n-bit addition by chaining half adders together, which was easy enough.
+                            The real challenge came with integrating denary into the interface. In particular, converting the binary outputs to denary was a 
+                            tremendously difficult problem. I spent months theorising and prototyping different solutions, before eventually finding an 
+                            iterative steady-state based solution. I loved the process of continually developing my knowledge of the problem, and expanding my toolbox 
+                            through each failed prototype. To indicate the scale of this project, I've included a short video of my world.
+                        </p>
+                    </div>
+                    <button class="read-more-btn" aria-expanded="false">Read More</button>
+                    <video class="project-video" autoplay loop muted playsinline aria-label="Minecraft calculator demonstration video showing the redstone logic gates and calculator implementation">
+                        <source src="calc_cut.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="project-item">
+                    <p class="story-text">
+                        My next major personal project was a program designed to solve the classic game Snake. 
+                        I wrote this in Processing (a Java-based language), and it was my introduction to OOP.
+                        I reframed the problem as finding a path from the snake's head to its tail, which goes through every cell in the grid.
+                    </p>
+                    <div class="technical-details" style="display: none;">
+                        <p class="story-text">
+                            This is called a Hamiltonian path, and will guarantee success. I combined this idea with A* pathfinding, where the 
+                            program would prioritise paths that led towards food. However, finding Hamiltonian paths is NP-Complete, so there is no
+                            efficient solution. I instead created a recursive update procedure that can eliminate moves which are not on Hamiltonian paths,
+                            but was not guaranteed to eliminate all invalid moves. This resulted in a high success rate, with the bot successfully beating the game 70% of the time.
+                            In the video below you can see the update procedure in action. The black cells are the body of the snake, and the red is the head. 
+                            All the other coloured states around the snake describe how many valid moves are available from that cell.
+                            The key skills I learnt during this project which can be applied to Bending Spoons are independent research and creative thinking. 
+                            I reduced the problem to one found in theory, and researched papers which gave insight and solutions. I then adopted and reapplied these solutions
+                            within the context of my program, a process which is applicable throughout all facets of software engineering.
+                        </p>
+                    </div>
+                    <button class="read-more-btn" aria-expanded="false">Read More</button>
+                    <video class="project-video" autoplay loop muted playsinline aria-label="Snake game video">
+                        <source src="snake_game.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
             </div>
         </section>
 
         <section id="technical-excellence" class="story-section">
             <div class="section-content">
                 <h2 class="section-heading">Professional Experience</h2>
-                <p class="story-text">
-                    Beyond personal projects, I've had the opportunity to apply these problem-solving skills in professional environments.
-                    This has allowed me to develop my communication and teamwork skills, as well as an emphasis on code quality and rigour.
-                    During my time at South Park Primary School as an IT assistant, I realised the importance of adapting communication styles to your audience.
-                    Teachers have very busy and stressful lives, so I needed to make my explanations as concise and understandable as possible, even if that meant excluding information.
-                    This strategy vastly differedF from when I ran a maths challenge for students in Alexandra Park High School, where instead the focus was on engagement and entertainment.
-                    I did this by creating a gamified environment, where learning and applying mathematics was a byproduct of playing the game, shifting students' perspectives from work to enjoyment.
-                    I believe my ability to adapt communication styles and goals will be a key asset in integrating with and across teams at Bending Spoons.
-                </p>
-                <p class="story-text">
-                    Through my internship and graduate work at WTW, I have been able to develop my skills as a principled software engineer. 
-                    Developing across a multi-location team of six during my internship, I was taught the value of clear architectural principles that prioritise 
-                    readability and maintainability. Through the use of Domain-Driven Design and Clean Architecture, I learnt how to segregate code by responsibility, 
-                    and how these patterns encourage effective teamwork. During my graduate scheme, I have been a strong advocate for effective Agile practices. 
-                    During a retrospective I raised the issue that our user-story acceptance criteria had become solution-focused, and explained how that could lead to requirement churn and 
-                    lower code quality. This feedback was taken on by the team, and I was asked to join our team lead in creating acceptance criteria. 
-                </p>
+                <div class="project-item">
+                    <p class="story-text">
+                        Beyond personal projects, I've had the opportunity to apply these problem-solving skills in professional environments.
+                        This has allowed me to develop my communication and teamwork skills, as well as an emphasis on code quality and rigour.
+                    </p>
+                    <div class="technical-details" style="display: none;">
+                        <p class="story-text">
+                            During my time at South Park Primary School as an IT assistant, I realised the importance of adapting communication styles to your audience.
+                            Teachers have very busy and stressful lives, so I needed to make my explanations as concise and understandable as possible, even if that meant excluding information.
+                            This strategy vastly differedF from when I ran a maths challenge for students in Alexandra Park High School, where instead the focus was on engagement and entertainment.
+                            I did this by creating a gamified environment, where learning and applying mathematics was a byproduct of playing the game, shifting students' perspectives from work to enjoyment.
+                            I believe my ability to adapt communication styles and goals will be a key asset in integrating with and across teams at Bending Spoons.
+                        </p>
+                        <p class="story-text">
+                            Through my internship and graduate work at WTW, I have been able to develop my skills as a principled software engineer. 
+                            Developing across a multi-location team of six during my internship, I was taught the value of clear architectural principles that prioritise 
+                            readability and maintainability. Through the use of Domain-Driven Design and Clean Architecture, I learnt how to segregate code by responsibility, 
+                            and how these patterns encourage effective teamwork. During my graduate scheme, I have been a strong advocate for effective Agile practices. 
+                            During a retrospective I raised the issue that our user-story acceptance criteria had become solution-focused, and explained how that could lead to requirement churn and 
+                            lower code quality. This feedback was taken on by the team, and I was asked to join our team lead in creating acceptance criteria. 
+                        </p>
+                    </div>
+                    <button class="read-more-btn" aria-expanded="false">Read More</button>
+                </div>
             </div>
         </section>
 
@@ -139,6 +160,25 @@
 
         document.querySelectorAll('.story-section').forEach(section => {
             observer.observe(section);
+        });
+
+        // Read More functionality
+        document.querySelectorAll('.read-more-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                const projectItem = this.closest('.project-item');
+                const technicalDetails = projectItem.querySelector('.technical-details');
+                const isExpanded = this.getAttribute('aria-expanded') === 'true';
+                
+                if (isExpanded) {
+                    technicalDetails.style.display = 'none';
+                    this.textContent = 'Read More';
+                    this.setAttribute('aria-expanded', 'false');
+                } else {
+                    technicalDetails.style.display = 'block';
+                    this.textContent = 'Read Less';
+                    this.setAttribute('aria-expanded', 'true');
+                }
+            });
         });
     </script>
 </body>
