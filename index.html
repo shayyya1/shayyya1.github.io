@@ -29,14 +29,19 @@
                         I think my first real dive into computational thinking started through playing Minecraft.
                         I had just learnt about logic gates in school, and in Minecraft there is redstone which functions the same way.
                         It quickly became a major project of mine to create an addition calculator, completely from first principles, out of logic gates.
+                        I spent months theorising and prototyping different solutions. I loved the process of continually developing my knowledge of the problem, and expanding my toolbox 
+                        through each failed prototype. To indicate the scale of this project, I've included a short video of my world.
                     </p>
                     <div class="technical-details" style="display: none;">
                         <p class="story-text">
                             I started small with a binary half adder, then scaled up to n-bit addition by chaining half adders together, which was easy enough.
                             The real challenge came with integrating denary into the interface. In particular, converting the binary outputs to denary was a 
-                            tremendously difficult problem. I spent months theorising and prototyping different solutions, before eventually finding an 
-                            iterative steady-state based solution. I loved the process of continually developing my knowledge of the problem, and expanding my toolbox 
-                            through each failed prototype. To indicate the scale of this project, I've included a short video of my world.
+                            tremendously difficult problem. I eventually created an iterative steady-state based solution which converts binary to BCD.
+                            It does this by seperating each binary digit into denary components, and summing these across all digits. 
+                            For example, 11000000 breaks down into 128 + 64, which we then further break down into one 100, two 10s and six 10s, an eight and a four.
+                            We sum across each denary place value to get one 100, eight 10s, and twelve. 
+                            We then feed this output back into the system, so the twelve becomes one 10 and two, and so on. Eventually a steady-state is reached and the BCD representation is obtained.
+                            
                         </p>
                     </div>
                     <button class="read-more-btn" aria-expanded="false">Read More</button>
@@ -50,18 +55,21 @@
                         My next major personal project was a program designed to solve the classic game Snake. 
                         I wrote this in Processing (a Java-based language), and it was my introduction to OOP.
                         I reframed the problem as finding a path from the snake's head to its tail, which goes through every cell in the grid.
+                        After extensive research and solutionising, I created a recursive update procedure which I combined with A* pathfinding.
+                        This resulted in a high success rate, with the bot successfully beating the game 70% of the time.
+                        The key skills I learnt during this project which can be applied to Bending Spoons are independent research and creative thinking. 
+                        I reduced the problem to one found in theory, and researched papers which gave insight and solutions. I then adopted and reapplied these solutions
+                        within the context of my program, a process which is applicable throughout all facets of software engineering.
                     </p>
                     <div class="technical-details" style="display: none;">
                         <p class="story-text">
-                            This is called a Hamiltonian path, and will guarantee success. I combined this idea with A* pathfinding, where the 
+                            The process of finding a path which goes through all cells exactly once is called a Hamiltonian path, and these are guaranteed to solve Snake as you cannot double back on yourself.
+                            I combined a decision procedure for finding Hamiltonian paths with A* pathfinding, where the 
                             program would prioritise paths that led towards food. However, finding Hamiltonian paths is NP-Complete, so there is no
                             efficient solution. I instead created a recursive update procedure that can eliminate moves which are not on Hamiltonian paths,
-                            but was not guaranteed to eliminate all invalid moves. This resulted in a high success rate, with the bot successfully beating the game 70% of the time.
+                            but was not guaranteed to eliminate all invalid moves. 
                             In the video below you can see the update procedure in action. The black cells are the body of the snake, and the red is the head. 
                             All the other coloured states around the snake describe how many valid moves are available from that cell.
-                            The key skills I learnt during this project which can be applied to Bending Spoons are independent research and creative thinking. 
-                            I reduced the problem to one found in theory, and researched papers which gave insight and solutions. I then adopted and reapplied these solutions
-                            within the context of my program, a process which is applicable throughout all facets of software engineering.
                         </p>
                     </div>
                     <button class="read-more-btn" aria-expanded="false">Read More</button>
