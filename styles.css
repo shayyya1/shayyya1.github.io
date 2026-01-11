@@ -158,7 +158,8 @@ main {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
     display: block;
     position: sticky;
-    top: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 /* Opening Section Special Styling */
