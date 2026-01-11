@@ -126,13 +126,30 @@ main {
 }
 
 /* Video Styling */
+.content-with-video {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.text-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.video-content {
+    flex: 0 0 45%;
+    max-width: 45%;
+}
+
 .project-video {
     width: 100%;
     height: auto;
-    margin: 2rem 0;
     border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
     display: block;
+    position: sticky;
+    top: 2rem;
 }
 
 /* Opening Section Special Styling */
@@ -167,6 +184,19 @@ footer {
     .story-section {
         min-height: auto;
         margin: 4rem 0;
+    }
+
+    .content-with-video {
+        flex-direction: column;
+    }
+
+    .video-content {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .project-video {
+        position: static;
     }
 
     .story-title {
