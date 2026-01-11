@@ -126,6 +126,10 @@ main {
 }
 
 /* Video Styling */
+:root {
+    --video-width: 45%;
+}
+
 .content-with-video {
     display: flex;
     gap: 2rem;
@@ -138,8 +142,8 @@ main {
 }
 
 .video-content {
-    flex: 0 0 45%;
-    max-width: 45%;
+    flex: 0 0 var(--video-width);
+    max-width: var(--video-width);
 }
 
 .project-video {
