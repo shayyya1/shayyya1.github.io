@@ -64,6 +64,12 @@ main {
     max-width: 100%;
 }
 
+/* Wider layout for video section */
+#journey .section-content {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
 /* Typography */
 .story-title {
     font-size: 3.5rem;
@@ -132,7 +138,7 @@ main {
 
 .content-with-video {
     display: flex;
-    gap: 2rem;
+    gap: 3rem;
     align-items: flex-start;
 }
 
@@ -158,7 +164,7 @@ main {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
     display: block;
     position: sticky;
-    top: 50%;
+    top: 50vh;
     transform: translateY(-50%);
 }
 
