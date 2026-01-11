@@ -127,7 +127,7 @@ main {
 
 /* Video Styling */
 :root {
-    --video-width: 45%;
+    --video-width: 55%;
 }
 
 .content-with-video {
@@ -139,6 +139,11 @@ main {
 .text-content {
     flex: 1;
     min-width: 0;
+}
+
+.text-content .story-text {
+    font-size: 1.1rem;
+    line-height: 1.9;
 }
 
 .video-content {
